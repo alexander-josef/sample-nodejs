@@ -591,6 +591,7 @@ function generateSeed(path) {
 }
 
 function randomPage(req, res) {
+  console.log("preparing random page ---")
   var seed = generateSeed(req.hostname + req.path);
 
   var title = randomTitle(seed);
