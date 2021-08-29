@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   console.log("lbtest router ---")
 
-  res.send('respond with a resource');
+  res.send('respond with a resource -- req IP : ' + req.ip);
 });
 
 module.exports = router;
